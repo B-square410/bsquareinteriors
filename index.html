@@ -12,8 +12,8 @@
     <header>
         <div class="navbar">
             <div class="logo">
-                <img src="img/B square-logo.jpg" alt="logo" class="logo-image">
-                <p class="logo-text"><b>B SQUARE INTERIORS</b></p>
+                <img src="img/b-square-logo.png" alt="logo" class="logo-image">
+                <p class="logo-text"><b>B-SQUARE INTERIORS</b></p>
             </div>
         
         <div class="hamburger" onclick="toggleMenu()" aria-label="menu">
@@ -21,8 +21,9 @@
         </div>
         <div class="navbar-links" id="navlinks" >
             <a class="a-element" href="#Home">Home</a>
-            <a class="a-element" href="aboutus.html">about</a>
+            <a class="a-element" href="aboutus.html">about us</a>
             <a class="a-element" href="#services">services</a>
+            <a class="a-element" href="projects.html">projects</a>
 
             <div class="dropdown" id="brandsDropdown">
               <button class="a-element" id="brandsBtn" aria-haspopup="true" aria-expanded="false">
@@ -97,54 +98,75 @@
      </div>
     </div>
  
+<!--service-section-->
+ <div class="wrap">
+    <div class="hero">
+      <h1>services</h1>
+      <p>Professional interior and construction solutions for every space</p>
+    </div>
 
-<!---Our services-->
+    <div class="service-grid">
 
-<div class="service-heading" id="services">
-    <h2>OUR SERVICES </h2>
-    <p>
-        Discover how <strong>B Square Interiors</strong> brings elegance to every corner —
-        smooth, stylish, and smart solutions tailored to your lifestyle.
-      </p>
-</div>
-<!--serives-card-->
- <div class="services">
-    <div class="service-card" style =" background-image: url('img/livingroom-image.jpg');" >
-      <div class="card-text">
-        <div class="card-title">Living room</div>
-        <a href="livingroom.html" class="btn">READ MORE</a>
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/woodwork.jpg" alt="Wood Work"></div>
+        <div class="service-title">Wood Work<br><small>Modular / Semi / Manual</small></div>
       </div>
-    </div>
-    
-    <div class="service-card" style="background-image: url('img/diningroom-image.jpg');">
-        <div class="card-text">
-            <div class="card-title">Dining room</div>
-            <a href="diningroom.html" class="btn">READ MORE</a>
-        </div>
-    </div>
 
-    <div class="service-card" style="background-image: url('img/kitchen-image.jpg');">
-        <div class="card-text">
-            <div class="card-title">Kitchen</div>
-            <a href="kitchen.html" class="btn">READ MORE</a>
-        </div>
- </div>
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/falseceiling.jpg" alt="False Ceiling"></div>
+        <div class="service-title">False Ceiling</div>
+      </div>
 
- <div class="service-card" style="background-image: url('img/bedroom-image.jpg');">
-    <div class="card-text">
-        <div class="card-title">bed room</div>
-        <a href="bedroom.html" class="btn">READ MORE</a>
-    </div>
- </div>
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/glasswork.jpg" alt="Glass Works"></div>
+        <div class="service-title">Glass Works</div>
+      </div>
 
- <div class="service-card" style="background-image: url('img/poojaroom.image\ \(2\).jpeg');">
-    <div class="card-text">
-        <div class="card-title">pooja room</div>
-        <a href="poojaroom.html" class="btn">READ MORE</a>
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/upcvworks.jpg" alt="UPVC Works"></div>
+        <div class="service-title">UPVC Works</div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/brands and curtains.jpg" alt="Blinds and Curtains"></div>
+        <div class="service-title">Blinds & Curtains</div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/paintwork.jpg" alt="Paint Works"></div>
+        <div class="service-title">Paint Works</div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/wallpaper.jpg" alt="Wallpaper Works"></div>
+        <div class="service-title">Wallpaper Works</div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/flooringwork.jpg" alt="Flooring Works"></div>
+        <div class="service-title">Flooring Works</div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/electricwork.jpg" alt="Electric Works"></div>
+        <div class="service-title">Electric Works</div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/plumbingwork.jpg" alt="Plumbing Works"></div>
+        <div class="service-title">Plumbing Works</div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon-wrap"><img src="img/grantework.jpg" alt="Granite and Quartz Works"></div>
+        <div class="service-title">Granite & Quartz Works</div>
+      </div>
+
+     
+
     </div>
- </div>
- </div>
-</section>
+  </div>
+
 
  <!--Why use us-->
  
@@ -195,14 +217,43 @@
   <h2>Your Dream Home is Just A click Away</h2>
   <p>Ready to transform your space?<br> Enter your details below and let's get started!</p>
 
-
-  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-  <input type="hidden" name="access_key" value="ab0e13aa-f090-4288-9c25-858cd78b064f" />
-  <input type="text" placeholder="Full-Name" name="name" required />
-  <input type="text" placeholder="Phone" name="number" required/>
-
-  <button type="submit">send</button>
-</form>
+  <form id="contactForm" class="contact-form">
+    <input type="text" id="name" placeholder="Full-Name" name="name" required>
+    <input type="text" id="phone" placeholder="Phone-number" name="phone" required>
+    <button type="submit">send</button>
+  </form>
+  
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+  
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+  
+    // Send to Web3Forms email
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        access_key: "ab0e13aa-f090-4288-9c25-858cd78b064f",
+        name: name,
+        phone: phone
+      })
+    });
+  
+    // Send to WhatsApp 
+    const whatsappNumber = "917396971741"; 
+    const message = `Hello, a new lead submitted the form:%0A%0A👤 Name: ${name}%0A📞 Phone: ${phone}`;
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+    
+    // Open WhatsApp automatically in a new tab
+    window.open(whatsappURL, "_blank");
+  
+    
+    alert("Form submitted successfully! You'll be redirected to WhatsApp.");
+  });
+  </script>
+  
 </div>
 
 <!--footer-->
@@ -229,6 +280,7 @@
         <li><a href="#Home">Home</a></li>
         <li><a href="aboutus.html">about</a></li>
         <li><a href="#services">services</a></li>
+        <li> <a href="projects.html">projects</a></li>
         <li><a href="contact.html">Contacts</a></li>
       </ul>
     </div>
@@ -238,7 +290,7 @@
     <!-- Contact Info -->
     <div class="footer-box">
       <h4>Contact Info</h4>
-      <p><i class="fas fa-phone"></i> 7396971741</p>
+      <p><i class="fas fa-phone"></i> 7396971741 / 9121571741</p>
       <p><i class="fab fa-instagram"></i> @b_square_interiors_</p>
       <p><i class="fas fa-location-dot"></i> Praneeth Homes Plot No:16 1st floor Near mallampet ORR Exist No:4A, mallampet Medchel Malkajgiri District,500090</p>
     </div>

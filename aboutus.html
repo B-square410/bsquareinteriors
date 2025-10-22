@@ -397,6 +397,91 @@ section {
   color: #444;
 }
 
+/* bio-Section Heading */
+
+.director-bio {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+
+.director-bio .section-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.director-bio .section-heading h2 {
+  font-size: 32px;
+  color: rgb(44, 145, 179);
+  font-weight: bold;
+}
+
+
+.director-bio .bio-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.bio-photo img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.bio-info {
+  flex: 1;
+ 
+}
+
+.bio-info h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.bio-info h4 {
+  margin: 5px 0 20px;
+  font-size: 18px;
+  color: #777;
+}
+
+.bio-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+/* Mobile View: Stack vertically */
+@media (max-width: 768px) {
+  .section-heading h2{
+    font-size: 30px;
+  }
+  .director-bio .bio-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .director-bio .bio-photo img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px; /* optional for rounded corners */
+  }
+
+  .director-bio .bio-info {
+    margin-top: 20px;
+    text-align:justify;
+  }
+}
+
 
 
 /* Responsive: Tablet & Mobile */
@@ -437,6 +522,7 @@ section {
 }
 
 @media (max-width: 768px) {
+  
   .heading{
     padding-top: 6rem;
    
@@ -494,8 +580,8 @@ section {
    <header>
     <div class="navbar">
         <div class="logo">
-            <img src="img/B square-logo.jpg" alt="logo" class="logo-image">
-            <p class="logo-text"><b>B SQUARE INTERIORS</b></p>
+            <img src="img/b-square-logo.png" alt="logo" class="logo-image">
+            <p class="logo-text"><b>B-SQUARE INTERIORS</b></p>
         </div>
     
     <div class="hamburger" onclick="toggleMenu()" aria-label="menu">
@@ -503,8 +589,9 @@ section {
     </div>
     <div class="navbar-links" id="navlinks" >
         <a class="a-element" href="index.html">Home</a>
-        <a class="a-element" href="aboutus.html">about</a>
+        <a class="a-element" href="aboutus.html">about us</a>
         <a class="a-element" href="index.html">services</a>
+        <a class="a-element" href="projects.html">projects</a>
 
         <div class="dropdown" id="brandsDropdown">
           <button class="a-element" id="brandsBtn" aria-haspopup="true" aria-expanded="false">
@@ -623,8 +710,34 @@ section {
     </div>
   </div>
 
-
+<!-- Director Info Section -->
  
+
+<section class="director-bio">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="section-heading">
+      <h2>Leading B-square Interiors with Excellence</h2>
+    </div>
+
+    <!-- Bio Content -->
+    <div class="bio-content">
+      <div class="bio-photo">
+        <img src="img/director-img.jpg" alt="Director Photo">
+      </div>
+      <div class="bio-info">
+        <h2>Mr.Bhanu chandra</h2>
+        <p>
+          He leads B-square Interiors with a passion for creating elegant and functional spaces. At B-square Interiors, he ensures every project reflects quality, creativity, and professionalism. Under his direction, the company has successfully completed residential, commercial, and office interiors with precision and style.B-square Interiors specializes in modern interior solutions including modular furniture, false ceilings, woodwork, and complete design consultations, delivering exceptional results tailored to every client.
+        </p>
+        <p>
+          The company is committed to sustainable design practices, using eco-friendly materials and energy-efficient solutions to create spaces that are both beautiful and responsible. With a focus on personalized client experience, B-square Interiors ensures every project is unique, blending functionality with aesthetic appeal, and maintaining transparency and professionalism throughout the process.
+        </p>
+       
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
