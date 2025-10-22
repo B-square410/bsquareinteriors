@@ -321,9 +321,10 @@ header {
   }
 
   .home-content h2 {
-    font-size: 12px;
+    font-size: 25px;
     padding: 0;
-    margin-top: 130px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .home-content p {
@@ -389,6 +390,7 @@ header {
     margin-bottom: 20px;
     width: 100%;
     color: rgb(19, 18, 18);
+    text-align: center;
   }
 
   .home-content p {
